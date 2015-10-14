@@ -1,0 +1,14 @@
+<%=@result%>
+<h3>Domains on Your Nameservers</h3>
+<table>
+<% @my_domains.each do |domain| %>
+	<tr><td><%=domain%></td></tr>
+<% end %>
+</table>
+
+<h3>Domains on Outside Nameservers</h3>
+<table>
+<% @outside_domains.each do |domain| %>
+	<tr><td><%=domain%></td></tr>
+<% end %>
+</table>

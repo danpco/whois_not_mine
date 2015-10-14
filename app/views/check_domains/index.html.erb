@@ -1,0 +1,13 @@
+<%= form_tag "/check_domains#create" do %>
+	<p>
+	<h4><%=label_tag 'domain_list', "List of domains, 1 per line" %></h4>
+	<%= text_area_tag "domain_list", nil,  placeholder: "domains", size: "40x10"  %>
+	</p>
+	
+	<p>
+	<h4><%=label_tag 'nameserver_list', "List of nameservers, 1 per line" %></h4>
+	<%=text_area_tag "nameserver_list", nil, placeholder: "nameservers", size: "40x4" %>
+	</p>
+
+	<%= submit_tag "Check "%>
+<% end %>
